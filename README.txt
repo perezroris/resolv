@@ -5,8 +5,12 @@ Quem conserta uma dobradiça solta? No resolv!, o morador pode mostrar o problem
 aos vizinhos ou procurar alguém que atenda seu bairro. Quem costura, dá aulas ou
 faz pequenos reparos pode usar o mesmo perfil para divulgar seu trabalho. Ao
 aproximar autônomos de possíveis clientes da região, a proposta se relaciona ao
-ODS 8 da ONU (Trabalho decente e crescimento econômico).
+ODS 8 da ONU (Trabalho decente e crescimento econômico). A proposta também se
+relaciona ao ODS 11 (Cidades e comunidades sustentáveis) ao facilitar o acesso
+a serviços próximos e a colaboração entre moradores para cuidar de suas casas
+e resolver necessidades do bairro. Esses são os impactos pretendidos pelo projeto.
 https://brasil.un.org/pt-br/sdgs/08
+https://brasil.un.org/pt-br/sdgs/11
 
 Como rodar no Android Studio
 ----------------------------

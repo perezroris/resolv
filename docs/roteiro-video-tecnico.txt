@@ -1,0 +1,89 @@
+resolv! | Roteiro do vídeo técnico da Global Solution
+Duração planejada: 4min40s. Os 20 segundos finais são margem para navegação.
+
+Antes de gravar
+Deixe o emulador aberto no Mural, com o modo profissional desligado. Abra também
+o arquivo docs/der-conversas-avaliacoes.svg em outra janela. Se já tiver ensaiado
+a proposta de R$ 80 no mesmo chat, escolha outro valor para a gravação. Leia só
+as falas. As indicações de tela são para você.
+
+0:00–0:30 | Abertura
+TELA — Mostre o Mural e a publicação “Quem conserta essa dobradiça?”.
+
+FALA — Oi, eu sou o Thiago e esse é o resolv!, nosso projeto de CitizenTech.
+Imagina que a dobradiça da sua porta soltou. Pode ter alguém na rua de trás
+que sabe consertar, mas como você encontra essa pessoa? O resolv! aproxima
+moradores que precisam de ajuda e vizinhos que querem ganhar uma renda com o
+que já sabem fazer. Vou mostrar o caminho desse pedido até a conversa sobre o preço.
+
+0:30–1:10 | Como o morador pede ajuda
+TELA — Toque em “Pedir ajuda”. Mostre título, descrição, tag e a opção de
+informar um valor. Feche o formulário pelo X e abra o pedido da dobradiça.
+
+FALA — O app abre direto no Mural. Para pedir ajuda, eu conto o que aconteceu e
+escolho uma tag. Também posso anexar uma foto e dizer quanto penso em gastar.
+Se eu nem souber quem chamar, escolho “Preciso de orientação” e os vizinhos
+podem comentar. Olha este pedido que já está publicado. A foto mostra onde a
+dobradiça soltou, e nos comentários dá para pedir mais detalhes antes de marcar
+uma visita.
+
+1:10–1:45 | Como encontrar alguém pela Vitrine
+TELA — Vá à Vitrine, selecione “Aulas” e abra o perfil de Ana Ribeiro. Mostre
+o bairro de origem e os bairros onde ela atende.
+
+FALA — Se eu já sei qual serviço quero, posso ir direto à Vitrine. Vou procurar
+aulas particulares. Aqui aparece a Ana. O perfil mostra de onde ela é e onde
+ela dá aula. Essa diferença importa porque alguém pode morar em outro bairro
+e atender no meu. A busca começa perto de casa e só amplia a região quando
+precisa. Posso abrir uma conversa direto desse perfil.
+
+1:45–2:30 | O lado de quem presta o serviço
+TELA — Em Perfil, ative “Quero oferecer serviços”. Marque “Pequenos reparos” e
+“Centro”, salve e abra a aba Serviços. Toque em “Quem conserta essa dobradiça?”.
+
+FALA — Agora vou mostrar o outro lado. Eu também sei fazer pequenos reparos.
+No mesmo perfil, ativo essa chave e escolho onde quero trabalhar. Vou marcar
+Centro. Quando eu salvo, meu perfil passa a aparecer na Vitrine. Aqui na aba
+Serviços, eu vejo os pedidos em aberto que combinam com o que faço e com os
+bairros que escolhi. Olha a dobradiça do começo. Posso abrir o pedido e falar
+com quem publicou.
+
+2:30–3:20 | Negociação no chat
+TELA — Toque em “Conversar com o morador”. Mostre o resumo, toque no lápis,
+informe 80,00, selecione “por visita” e toque em “Enviar proposta”. Mostre o
+novo valor no topo e a mensagem no histórico.
+
+FALA — Quando abro o chat pelo pedido, o título e a descrição já vêm junto.
+Eu sei de qual porta a pessoa está falando. Vou propor oitenta reais pela
+visita. Repara que a unidade aparece junto do preço: dá para saber se são
+oitenta reais para ir até lá ou por hora de trabalho. A proposta aparece no
+resumo e fica registrada aqui na conversa. Se o valor mudar depois, dá para
+consultar o anterior. O pedido público continua com a estimativa original.
+Quem publicou pode marcar o pedido como resolvido depois do atendimento e
+avaliar quem fez o serviço.
+
+3:20–4:15 | Como o protótipo foi construído
+TELA — Comece com o chat na tela. Ao mencionar o Oracle, mude para o diagrama
+e aponte RV_PEDIDO, RV_CONVERSA, RV_MENSAGEM e RV_AVALIACAO.
+
+FALA — As telas e as regras do app foram feitas em Flutter com Dart. No Android,
+usamos Kotlin para abrir o seletor de fotos e guardar os dados no aparelho.
+Assim eu consigo fechar o app e encontrar a conversa quando voltar. Os moradores
+são fictícios e o chat desta demonstração funciona localmente. Para poupar memória,
+o Mural carrega os itens conforme eles aparecem na tela, e o app reduz as fotos
+antes de salvá-las.
+
+A parte de banco do trabalho foi implementada e testada separadamente no Oracle.
+Aqui no diagrama, um pedido pode dar origem a várias conversas. Cada proposta
+fica registrada como mensagem na conversa certa. Uma das rotinas em PL/SQL
+também confere se o pedido foi resolvido antes de aceitar uma avaliação e impede
+que o mesmo atendimento seja avaliado duas vezes.
+
+4:15–4:40 | Encerramento
+TELA — Volte ao app e encerre no Mural ou na Vitrine.
+
+FALA — Voltando ao problema do começo: o morador conseguiu explicar o conserto,
+e alguém da região pôde oferecer o serviço e discutir o valor. É aí que o resolv!
+se relaciona com o ODS 8, pelo apoio ao trabalho autônomo, e com o ODS 11,
+de cidades e comunidades sustentáveis. A proposta é facilitar o acesso a
+serviços próximos e a colaboração entre vizinhos. Obrigado!
