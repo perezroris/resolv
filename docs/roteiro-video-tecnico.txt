@@ -1,11 +1,12 @@
 resolv! | Roteiro do vídeo técnico da Global Solution
-Duração planejada: 4min40s. Os 20 segundos finais são margem para navegação.
+Duração planejada: 4min50s. Os 10 segundos finais são margem para navegação.
 
 Antes de gravar
 Deixe o emulador aberto no Mural, com o modo profissional desligado. Abra também
 o arquivo docs/der-conversas-avaliacoes.svg em outra janela. Se já tiver ensaiado
 a proposta de R$ 80 no mesmo chat, escolha outro valor para a gravação. Leia só
-as falas. As indicações de tela são para você.
+as falas. As indicações de tela são para você. Faça um ensaio cronometrado antes
+de gravar, porque o tempo varia com a fala e com a velocidade do emulador.
 
 0:00–0:30 | Abertura
 TELA — Mostre o Mural e a publicação “Quem conserta essa dobradiça?”.
@@ -62,28 +63,30 @@ consultar o anterior. O pedido público continua com a estimativa original.
 Quem publicou pode marcar o pedido como resolvido depois do atendimento e
 avaliar quem fez o serviço.
 
-3:20–4:15 | Como o protótipo foi construído
+3:20–4:10 | Como o protótipo foi construído
 TELA — Comece com o chat na tela. Ao mencionar o Oracle, mude para o diagrama
 e aponte RV_PEDIDO, RV_CONVERSA, RV_MENSAGEM e RV_AVALIACAO.
 
-FALA — As telas e as regras do app foram feitas em Flutter com Dart. No Android,
-usamos Kotlin para abrir o seletor de fotos e guardar os dados no aparelho.
-Assim eu consigo fechar o app e encontrar a conversa quando voltar. Os moradores
-são fictícios e o chat desta demonstração funciona localmente. Para poupar memória,
-o Mural carrega os itens conforme eles aparecem na tela, e o app reduz as fotos
-antes de salvá-las.
+FALA — Escolhemos Flutter com Dart para construir as telas e as regras do app.
+O Kotlin faz a integração com as fotos e o armazenamento do Android. As mensagens
+ficam salvas no aparelho, e o chat desta demonstração funciona localmente.
+Para poupar memória, as listas criam os itens conforme aparecem na tela e
+as fotos são reduzidas antes de serem salvas.
 
-A parte de banco do trabalho foi implementada e testada separadamente no Oracle.
-Aqui no diagrama, um pedido pode dar origem a várias conversas. Cada proposta
-fica registrada como mensagem na conversa certa. Uma das rotinas em PL/SQL
-também confere se o pedido foi resolvido antes de aceitar uma avaliação e impede
-que o mesmo atendimento seja avaliado duas vezes.
+O modelo de dados e as rotinas PL/SQL foram testados separadamente no Oracle.
+Aqui, um pedido pode ter várias conversas. Cada proposta pertence à sua conversa,
+e a avaliação pertence ao pedido. Uma das rotinas verifica se o pedido foi
+resolvido e impede uma segunda avaliação. Os testes do app também cobrem
+publicação de pedidos, negociação e recuperação dos dados salvos.
 
-4:15–4:40 | Encerramento
+4:10–4:50 | ODS 8, ODS 11 e encerramento
 TELA — Volte ao app e encerre no Mural ou na Vitrine.
 
-FALA — Voltando ao problema do começo: o morador conseguiu explicar o conserto,
-e alguém da região pôde oferecer o serviço e discutir o valor. É aí que o resolv!
-se relaciona com o ODS 8, pelo apoio ao trabalho autônomo, e com o ODS 11,
-de cidades e comunidades sustentáveis. A proposta é facilitar o acesso a
-serviços próximos e a colaboração entre vizinhos. Obrigado!
+FALA — O resolv! se relaciona com dois Objetivos de Desenvolvimento Sustentável.
+No ODS 8, de trabalho decente e crescimento econômico, a proposta é dar
+visibilidade aos autônomos e aproximá-los de oportunidades na região.
+No ODS 11, de cidades e comunidades sustentáveis, buscamos facilitar o acesso
+a serviços próximos e a colaboração entre moradores.
+O exemplo da dobradiça mostra essa relação. Um vizinho consegue ajuda para
+cuidar da casa, e outro pode transformar uma habilidade em renda.
+Esse é o impacto que pretendemos alcançar com o resolv!. Obrigado!
